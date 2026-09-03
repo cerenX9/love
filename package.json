@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "tunnel": ".\\bin\\cloudflared.exe tunnel --url http://localhost:5173"
+    "serve": "vite preview --port 5173 --host",
+    "tunnel": ".\\bin\\cloudflared.exe tunnel --url http://localhost:5173",
+    "tunnel:quick": ".\\bin\\cloudflared.exe tunnel --url http://localhost:5173",
+    "tunnel:service": ".\\bin\\cloudflared.exe service"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
