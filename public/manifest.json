@@ -1,0 +1,32 @@
+{
+  "id": "ceren-tahir-love-hub",
+  "short_name": "Ceren ❤️ Tahir",
+  "name": "Ceren ❤️ Tahir - Özel Aşk Alanı",
+  "description": "Ceren & Tahir Gerçek Zamanlı Aşk ve Anı Alanı",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "background_color": "#fff1f2",
+  "theme_color": "#f43f5e",
+  "display": "standalone",
+  "orientation": "portrait"
+}
