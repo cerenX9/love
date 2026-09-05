@@ -58,7 +58,13 @@ const MainContent = () => {
   const currentTabMeta = MENU_ITEMS.find((m) => m.id === activeTab) || MENU_ITEMS[0];
 
   return (
-    <div className="min-h-screen flex flex-col relative z-10">
+    <div
+      className="min-h-screen flex flex-col relative z-10"
+      style={{
+        paddingTop: 'max(env(safe-area-inset-top, 0px), 16px)',
+        paddingBottom: 'max(env(safe-area-inset-bottom, 0px), 24px)',
+      }}
+    >
       {/* Background Floating Hearts */}
       <FloatingHearts />
 

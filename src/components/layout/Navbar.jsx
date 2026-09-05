@@ -49,8 +49,14 @@ const Navbar = ({ onOpenMenu, onOpenSettings, onOpenPinModal, activeTab: propAct
   const currentPartner = activePersona === 'partner1' ? profile.partner1 : profile.partner2;
 
   return (
-    <header className="sticky top-2 sm:top-3 z-40 px-2 sm:px-4 md:px-6 max-w-6xl mx-auto w-full">
-      <nav className="glass-pill px-2.5 sm:px-4 md:px-5 py-1.5 sm:py-2.5 rounded-full shadow-lg shadow-rose-200/40 flex items-center justify-between gap-1 sm:gap-2 md:gap-3 transition-all duration-300 w-full overflow-hidden">
+    <header
+      className="sticky z-40 px-2 sm:px-4 md:px-6 max-w-6xl mx-auto w-full transition-all duration-300 mb-2 sm:mb-4"
+      style={{
+        top: 'calc(env(safe-area-inset-top, 0px) + 12px)',
+        paddingTop: 'max(env(safe-area-inset-top, 0px), 8px)',
+      }}
+    >
+      <nav className="glass-pill px-2.5 sm:px-4 md:px-5 py-2 sm:py-2.5 rounded-full shadow-lg shadow-rose-200/40 flex items-center justify-between gap-1 sm:gap-2 md:gap-3 transition-all duration-300 w-full overflow-hidden">
         {/* Left: Side Menu Hamburger Button & Brand */}
         <div className="flex items-center gap-1.5 sm:gap-3 min-w-0 shrink">
           <button
