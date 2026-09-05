@@ -16,6 +16,17 @@ import {
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { getAuth, signInAnonymously } from 'firebase/auth';
 
+// Default Project Firebase Configuration
+const DEFAULT_FIREBASE_CONFIG = {
+  apiKey: "AIzaSyD0a8BsK0v8ZkteYr3EuyjywDkBzquD3tw",
+  authDomain: "ceren-tahir-love.firebaseapp.com",
+  projectId: "ceren-tahir-love",
+  storageBucket: "ceren-tahir-love.firebasestorage.app",
+  messagingSenderId: "18030151950",
+  appId: "1:18030151950:web:c172d38a33134b44352f5f",
+  measurementId: "G-YQMZL814SY"
+};
+
 // Retrieve config from Vite env or local settings
 export const getFirebaseConfig = () => {
   try {
@@ -41,7 +52,7 @@ export const getFirebaseConfig = () => {
     return envConfig;
   }
 
-  return null;
+  return DEFAULT_FIREBASE_CONFIG;
 };
 
 export const isFirebaseConfigured = () => {

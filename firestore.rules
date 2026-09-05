@@ -1,14 +1,8 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Restrict access exclusively to the couple_data collection
-    match /couple_data/{document} {
-      allow read, write: if true;
-    }
-    
-    // Disallow arbitrary collection access
     match /{document=**} {
-      allow read, write: if false;
+      allow read, write: if true;
     }
   }
 }
