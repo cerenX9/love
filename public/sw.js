@@ -1,5 +1,5 @@
 // Service Worker for Ceren ❤️ Tahir PWA - Bulletproof Offline & Always-On Cache
-const CACHE_NAME = 'ceren-tahir-lovehub-v3';
+const CACHE_NAME = 'ceren-tahir-lovehub-v4';
 
 const PRECACHE_ASSETS = [
   '/',
